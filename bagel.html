@@ -1,7 +1,7 @@
 <!DOCTYPEhtml>
 <html lang="en"> 
 <!--
-update: 9.10.17
+update: 9.16.17
 version: 1.0.0
           ||||||||||||            Looking to improve The Monthly Bagel?
       ||||            ||||        If you know anything about writing,
@@ -33,7 +33,7 @@ version: 1.0.0
                 margin: 80px auto;
                 position: relative;
                 padding: 10px 5px;
-                background: hsla(0,0%,100%,.3);
+                background: rgba(255,255,255,.3);
                 font-size: 20px;
                 font-family: 'Lora', serif;
                 line-height: 1.5;
@@ -76,15 +76,15 @@ version: 1.0.0
                 margin: 0px 0px;
                 padding: 5px 5px;
                 width:100%;
-                background: rgba(255,255,255, 0.1);
+                background: rgba(0,0,0, 0.9);
                 font-family: 'Lora', serif;
                 position: fixed;
-                top:0px;
-                left:0px;
+                top: 0px;
+                left: 0px;
                 line-height: 1.5;
-                border-radius:3px;
+                border-radius: 3px;
                 color:white;
-                z-index:5;
+                z-index: 5;
 
             }
             #navbar::before{
@@ -95,7 +95,7 @@ version: 1.0.0
                 right: 0;
                 bottom: 0;
                 left: 0;
-                filter: blur(10px);
+                filter: blur(5px);
                 z-index: -1;
             }
             /* style the links inside the navigation bar */
@@ -130,7 +130,6 @@ version: 1.0.0
                 height:200px;
                 
             }
-            /*backgroung of home page*/
             body, .blurback::before, .lightblur::before{
                 background: url(https://images5.alphacoders.com/754/thumb-1920-754580.jpg) 0 / cover fixed;
             }
@@ -163,7 +162,29 @@ version: 1.0.0
                 z-index: -1;
 
             }
+            .blurback {
+                margin: 20px 30%;
+                position: relative;
+                padding: 5px 5px;
+                background: rgba(255,255,255, 0.3);
+                font-family: 'Lora', serif;
+                line-height: 1.5;
+                border-radius: 10px;
+                overflow: hidden;
+                color:white;
+            }
+            .blurback::before{
+                content: '';
+                margin: -35px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                filter: blur(15px);
+                z-index: -1;
 
+            }
             /*formatting for the bagel logo in the titlebar*/
             .logo {
                 width: 64px;
@@ -233,12 +254,12 @@ version: 1.0.0
               
                 <h3 class="lightblur">About</h3>
                 </div></center> 
-                    <div class="blurback">
+                    <div id="about" class="blurback">
 
                         The Monthly Bagel is a news site created by LAMS students
                         RR Strauss, LB Dare, and S Westcott, as well as a team of
                         volunteers helping us produce news monthly. The Monthly Bagel
-                        is a news site focused on elegance, design, and simplicity
+                        is focused on elegance, design, and simplicity
                         of use. It has a simple, easy-to-navigate UI, while looking
                         beautiful at the same time.
                               <br> <br>
