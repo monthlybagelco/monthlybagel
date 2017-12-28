@@ -1,0 +1,166 @@
+#titlebar {
+    min-width:500px;
+    margin: 80px auto;
+    position: relative;
+    padding: 10px 5px;
+    background: rgba(255,255,255,.3);
+    font-size: 20px;
+    font-family: 'Lora', serif;
+    line-height: 1.5;
+    border-radius: 10px;
+    width: 60%;
+    box-shadow: -5px 3px 30px black;
+    overflow: hidden;
+}
+#titlebar::before {
+    content: '';
+    margin: -35px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: blur(10px);
+    z-index: -1;
+}
+#titletext {
+    font-size: 400%;
+    color:white;
+}
+/*page 2 CSS*/
+#page2{
+    color: white;border-width: 0px; border-radius: 5px; width:85%;
+}
+#about{
+    padding: 10px 15px;
+    margin: 10px 1%;
+    /*background-color:white;*/
+    color:white;
+    border-width: 0px;
+    border-radius: 5px;
+    font-size:120%;
+}
+#navbar {
+   
+    background-color:rgba(255,255,255,0.2);
+    overflow: hidden;
+    margin: 0px 0px;
+    padding: 5px 5px;
+    width:100%;
+    background: rgba(0,0,0, 0.9);
+    font-family: 'Lora', serif;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    line-height: 1.5;
+    border-radius: 3px;
+    color:white;
+    z-index: 5;
+
+}
+#navbar::before{
+    content: '';
+    margin: -35px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: blur(5px);
+    z-index: -1;
+}
+/* style the links inside the navigation bar */
+#navbar a {
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+/* Change the color of links on hover */
+#navbar a:hover {
+    background-color:rgba(255,255,255,0.4);
+}
+/* Add a color to the active/current link */
+#navbar .active {
+    background-color: #4CAF50;
+    color: white;
+}
+#articleprev {
+	min-width:500px;
+    border-radius: 7px;
+    border-width: 1px;
+    width:85%;
+    height:625px;
+    
+}
+#oldarticles {
+	min-width:500px;
+    border-radius: 7px;
+    border-width: 1px;
+    width:85%;
+    height:200px;
+    
+}
+body, .blurback::before, .lightblur::before{
+    background: url(https://raw.githubusercontent.com/monthlybagelco/monthlybagel/master/forest-background.jpg) 0 / cover fixed;
+}
+hr {
+    margin: 5% 30%;
+    border-color:rgb(255,255,255);
+    border-width: 1px;
+    border-style: solid;
+}
+.lightblur {
+    margin: 20px 30%;
+    position: relative;
+    padding: 5px 5px;
+    background: rgba(255,255,255, 0.125);
+    font-family: 'Lora', serif;
+    line-height: 1.5;
+    border-radius: 10px;
+    overflow: hidden;
+    color:white;
+}
+.lightblur::before{
+    content: '';
+    margin: -35px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: blur(5px);
+    z-index: -1;
+
+}
+.blurback {
+    margin: 20px 30%;
+    position: relative;
+    padding: 5px 5px;
+    background: rgba(255,255,255, 0.3);
+    font-family: 'Lora', serif;
+    line-height: 1.5;
+    border-radius: 10px;
+    overflow: hidden;
+    color:white;
+}
+.blurback::before{
+    content: '';
+    margin: -35px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: blur(15px);
+    z-index: -1;
+
+}
+.logo {
+    width: 64px;
+    height: 64px;
+    padding-left:8px;
+    padding-top: 8px;
+    padding-right: 8px;
+    filter: invert(100%);
+}
